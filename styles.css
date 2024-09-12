@@ -7,7 +7,7 @@ body{
     justify-content: center;
     background-color: #FAF9F6;
 }
-div{
+.game{
     width: 500px;
     height: 500px;
     display: flex;
@@ -16,14 +16,14 @@ div{
     align-items: center;
     background-color: white;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1.25px solid black;
 }
 input{
     width: 8rem;
     height: 1rem;
     text-align: center;
 }
-button{
+#submit{
     width: 18.5%;
     height: 1rem;
     margin-top: 0.25rem;
@@ -31,12 +31,35 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FAF9F6;
+    border: 1px solid;
 }
 h1{
     margin-top: 3rem;
 }
 h3{
     font-weight: 450;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-inline: 1rem;
+    display: none;
+}
+#lives{
+    width: 100%;
+    height: 85%;
+    color: red;
+    background-color: black;
+    font-size: 1.5rem;
+}
+.heart{
+    display: inline-block;
 }
 
 @keyframes flash {
@@ -46,15 +69,5 @@ h3{
 }
 
 .flash {
-    animation: flash 0.4s ease-in-out;
-}
-
-@keyframes flashTwo {
-    0% { opacity: 1; color: red; }
-    50% { opacity: 1; color: white; }
-    100% { opacity: 1; color: red; }
-}
-
-.flashTwo {
-    animation: flashTwo 0.4s ease-in-out;
+    animation: flash 0.25s ease-in-out;
 }

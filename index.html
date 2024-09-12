@@ -8,13 +8,19 @@
     <script src="main.js" defer></script>
     <title>Document</title>
 </head>
-<body>
-    <div class="flash" id="flasher">
-        <h1>RNG guesser</h1>
-        <h3>pick any number from 1-25 to begin</h3>
-        <label class="flashTwo" id="change">Guess:</label>
+<body class="flash" id="flasher">
+    <div class="game">
+        <h1 id="modeHeader">RNG guesser</h1>
+        <h3 id="modeMiniHeader">pick any number from 1-25 to begin</h3>
+        <label id="change">Guess:</label>
         <input id="input" type="number">
         <button id="submit">Guess</button>
+        <div class="flex">
+            <img src="lives.png" alt="heart" class="lifeOne" id="lifeOne">
+            <img src="lives.png" alt="heart" class="lifeTwo" id="lifeTwo">
+            <img src="lives.png" alt="heart" class="lifeThree" id="lifeThree">
+            <button id="lives">hard mode on</button>
+        </div>
     </div>
 </body>
 </html>
