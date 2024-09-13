@@ -86,7 +86,7 @@ function triggerFlash(){ // When input data is incorrect and submitted, Flash th
 function resetGame(){ // Once user wins and clicks on "reset" clear the field, return to the base properties, Then generate a new number
 
     randomNumber = Math.floor(Math.random() * 25) // Generate new number
-    submitButton.innerText = "guess"
+    submitButton.innerText = "Check"
     document.getElementById("input").value = ""; // Clear the input field
     console.log("Correct number = " + randomNumber) // Print new number
     livesRemaining = (livesRemaining - 10 + 5) // Clear lives and reset back to 5
