@@ -98,19 +98,21 @@ function hardMode(){ // Toggles the hardmode difficulty
 
     hardModeOnButton.style.display = "none"
     document.getElementById("input").value = ""
+    randomNumber = Math.floor(Math.random() * 25) // Generate new number
     changeText.innerText = "Guess:"
     changeText.style.color = "black"
     changeText.style.fontWeight = "normal"
     changeText.style.fontSize = "16px"
     livesRemaining = 5 // Sets livesRemaining to 5 so that you have 4 wrong guesses before the game is lost
     consoleNum = (1) // Variable for the tellMode function to display what mode the game is being played in
-    console.log("lives = " + livesRemaining)
     lifeOne.classList.add("heart")
     lifeTwo.classList.add("heart")
     lifeThree.classList.add("heart")
     lifeFour.classList.add("heart")
     lifeFive.classList.add("heart")
     tellMode() // Calls a function which shows if it is hardmode or not
+    console.log("lives = " + livesRemaining)
+    console.log("Correct number = " + randomNumber) // Tells correct answer
 }
 
 function liveRemoval(){ // Gives functionality to the hardmode lives and removes 1 heart when one life point is removed
